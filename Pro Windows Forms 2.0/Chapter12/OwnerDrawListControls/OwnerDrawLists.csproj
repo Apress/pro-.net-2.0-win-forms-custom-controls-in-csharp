@@ -1,0 +1,109 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{426C6446-5E2A-4D7F-9664-AC74BD4D00BA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OwnerDrawList</RootNamespace>
+    <AssemblyName>OwnerDrawList</AssemblyName>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OwnerDrawTreeViewControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerDrawTreeViewControl.Designer.cs">
+      <DependentUpon>OwnerDrawTreeViewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormattedListItemWrapper.cs" />
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiSelectTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OwnerDrawTreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OwnerDrawTreeView.Designer.cs">
+      <DependentUpon>OwnerDrawTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="OwnerDrawTreeViewControl.resx">
+      <DependentUpon>OwnerDrawTreeViewControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OwnerDrawTreeView.resx">
+      <DependentUpon>OwnerDrawTreeView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimpleOwnerDrawList.resx">
+      <DependentUpon>SimpleOwnerDrawList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VariableOwnerDrawList.resx">
+      <DependentUpon>VariableOwnerDrawList.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleOwnerDrawList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimpleOwnerDrawList.Designer.cs">
+      <DependentUpon>SimpleOwnerDrawList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VariableOwnerDrawList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VariableOwnerDrawList.Designer.cs">
+      <DependentUpon>VariableOwnerDrawList.cs</DependentUpon>
+    </Compile>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+</Project>

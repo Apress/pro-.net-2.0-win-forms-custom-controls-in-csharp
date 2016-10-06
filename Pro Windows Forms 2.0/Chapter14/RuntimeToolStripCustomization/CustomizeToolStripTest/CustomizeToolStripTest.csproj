@@ -1,0 +1,93 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9CCC3E0E-464C-49F7-B038-FC795ED4A2C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Microsoft.Samples.BoosterSamples.CustomizeToolStripTest</RootNamespace>
+    <AssemblyName>CustomizeToolStripTest</AssemblyName>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Images\addclient.PNG" />
+    <Content Include="Images\enterbill.PNG" />
+    <Content Include="Images\findappt.PNG" />
+    <Content Include="Images\findbill.PNG" />
+    <Content Include="Images\findclient.PNG" />
+    <Content Include="Images\helpcontents.PNG" />
+    <Content Include="Images\removeappt.PNG" />
+    <Content Include="Images\removebill.PNG" />
+    <Content Include="Images\removeclient.PNG" />
+    <Content Include="Images\schednewappt.PNG" />
+    <Content Include="Images\showallappts.PNG" />
+    <Content Include="Images\showallbills.PNG" />
+    <Content Include="Images\showallclients.PNG" />
+    <Content Include="Images\showappt.PNG" />
+    <Content Include="Images\showbill.PNG" />
+    <Content Include="Images\showindclient.PNG" />
+    <Content Include="Images\toolsmngprov.PNG" />
+    <Content Include="Images\toolsoptions.PNG" />
+    <Content Include="Images\updateappt.PNG" />
+    <Content Include="Images\updatebill.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomizeToolStrip\CustomizeToolStrip.csproj">
+      <Project>{F56F929A-7F84-46E8-8E09-63213497205C}</Project>
+      <Name>CustomizeToolStrip</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+</Project>

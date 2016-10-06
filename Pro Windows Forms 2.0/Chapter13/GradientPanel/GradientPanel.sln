@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradientPanelControl", "GradientPanelControl\GradientPanelControl.csproj", "{249E3320-5FB8-48DC-AD25-DBE71195209A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradientPanelHost", "GradientPanelHost\GradientPanelHost.csproj", "{9BA9D88F-A938-44BF-ACDE-29F63B54D586}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{249E3320-5FB8-48DC-AD25-DBE71195209A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{249E3320-5FB8-48DC-AD25-DBE71195209A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{249E3320-5FB8-48DC-AD25-DBE71195209A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{249E3320-5FB8-48DC-AD25-DBE71195209A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BA9D88F-A938-44BF-ACDE-29F63B54D586}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BA9D88F-A938-44BF-ACDE-29F63B54D586}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BA9D88F-A938-44BF-ACDE-29F63B54D586}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BA9D88F-A938-44BF-ACDE-29F63B54D586}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+﻿<Project MSBuildVersion="2.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="">
+    <LastOpenVersion>8.0.40413</LastOpenVersion>
+    <ProjectView>ProjectFiles</ProjectView>
+    <ProjectTrust>0</ProjectTrust>
+  </PropertyGroup>
+</Project>

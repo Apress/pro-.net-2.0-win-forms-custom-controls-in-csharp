@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollapsiblePanelHost", "CollapsiblePanelHost\CollapsiblePanelHost.csproj", "{DD85A341-8E61-44EC-A98A-6669652BF6CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollapsiblePanelControl", "CollapsiblePanelControl\CollapsiblePanelControl.csproj", "{A442592C-F336-4824-B4C7-11B34B724693}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD85A341-8E61-44EC-A98A-6669652BF6CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD85A341-8E61-44EC-A98A-6669652BF6CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD85A341-8E61-44EC-A98A-6669652BF6CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD85A341-8E61-44EC-A98A-6669652BF6CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A442592C-F336-4824-B4C7-11B34B724693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A442592C-F336-4824-B4C7-11B34B724693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A442592C-F336-4824-B4C7-11B34B724693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A442592C-F336-4824-B4C7-11B34B724693}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

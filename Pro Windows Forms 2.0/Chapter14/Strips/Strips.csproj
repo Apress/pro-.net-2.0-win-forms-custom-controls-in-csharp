@@ -1,0 +1,181 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C7BA361-10BB-48C0-9093-7FDEA0D4BB05}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Strips</RootNamespace>
+    <AssemblyName>Strips</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContextMenus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContextMenus.Designer.cs">
+      <DependentUpon>ContextMenus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContainerTest.Designer.cs">
+      <DependentUpon>ContainerTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatusStripBorders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatusStripBorders.Designer.cs">
+      <DependentUpon>StatusStripBorders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatusStripSpring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatusStripSpring.Designer.cs">
+      <DependentUpon>StatusStripSpring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StripMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StripMenu.Designer.cs">
+      <DependentUpon>StripMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolStripAlignment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolStripAlignment.Designer.cs">
+      <DependentUpon>ToolStripAlignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolStripFloat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolStripFloat.Designer.cs">
+      <DependentUpon>ToolStripFloat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolStripImages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolStripImages.Designer.cs">
+      <DependentUpon>ToolStripImages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ContextMenus.resx">
+      <DependentUpon>ContextMenus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerTest.resx">
+      <DependentUpon>ContainerTest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatusStripBorders.resx">
+      <DependentUpon>StatusStripBorders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatusStripSpring.resx">
+      <DependentUpon>StatusStripSpring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StripMenu.resx">
+      <DependentUpon>StripMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolStripAlignment.resx">
+      <DependentUpon>ToolStripAlignment.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolStripFloat.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ToolStripFloat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolStripImages.resx">
+      <DependentUpon>ToolStripImages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolStripLink.resx">
+      <DependentUpon>ToolStripLink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolStripSizes.resx">
+      <DependentUpon>ToolStripSizes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerticalToolStrip.resx">
+      <DependentUpon>VerticalToolStrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ToolStripLink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolStripLink.Designer.cs">
+      <DependentUpon>ToolStripLink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolStripSizes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolStripSizes.Designer.cs">
+      <DependentUpon>ToolStripSizes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerticalToolStrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerticalToolStrip.Designer.cs">
+      <DependentUpon>VerticalToolStrip.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\err.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\err1.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

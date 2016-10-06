@@ -1,0 +1,162 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50215</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3FFCBBA6-CA5D-4C9B-93C2-DBFF2369B51B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BindingToDataSet</RootNamespace>
+    <AssemblyName>BindingToDataSet</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BindToImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BindToImage.Designer.cs">
+      <DependentUpon>BindToImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridBinding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridBinding.designer.cs">
+      <DependentUpon>GridBinding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Validation.Designer.cs">
+      <DependentUpon>Validation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditableBinding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditableBinding.Designer.cs">
+      <DependentUpon>EditableBinding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilteredListBinding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilteredListBinding.Designer.cs">
+      <DependentUpon>FilteredListBinding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LookupTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LookupTable.Designer.cs">
+      <DependentUpon>LookupTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterDetail.Designer.cs">
+      <DependentUpon>MasterDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultipleControlBinding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultipleControlBinding.Designer.cs">
+      <DependentUpon>MultipleControlBinding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleListBinding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimpleListBinding.Designer.cs">
+      <DependentUpon>SimpleListBinding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BindToImage.resx">
+      <DependentUpon>BindToImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridBinding.resx">
+      <DependentUpon>GridBinding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Validation.resx">
+      <DependentUpon>Validation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditableBinding.resx">
+      <DependentUpon>EditableBinding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilteredListBinding.resx">
+      <DependentUpon>FilteredListBinding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LookupTable.resx">
+      <DependentUpon>LookupTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterDetail.resx">
+      <DependentUpon>MasterDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultipleControlBinding.resx">
+      <DependentUpon>MultipleControlBinding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimpleListBinding.resx">
+      <DependentUpon>SimpleListBinding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unsynchronized.resx">
+      <DependentUpon>Unsynchronized.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="StoreDB.cs" />
+    <Compile Include="Unsynchronized.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unsynchronized.Designer.cs">
+      <DependentUpon>Unsynchronized.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

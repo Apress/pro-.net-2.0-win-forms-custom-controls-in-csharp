@@ -1,0 +1,70 @@
+http://www.windowsforms.net/rss/rssFeed.aspx?PageID=1 (Recent)
+http://www.windowsforms.net/rss/rssFeed.aspx?PageID=6 (Recent Posts)
+http://www.windowsforms.net/rss/rssFeed.aspx?PageID=4 (Popular Controls)
+http://www.windowsforms.net/rss/rssFeed.aspx?PageID=5 (Recent posts)
+http://www.windowsforms.net/rss/rssFeed.aspx?PageID=7 (New Threads)
+http://www.windowsforms.net/rss/rssFeed.aspx?PageID=8 (Top Articles)
+http://www.windowsforms.net/rss/rssFeed.aspx?PageID=9 (Top Whidbey Articles)
+http://www.windowsforms.net/rss/rssFeed.aspx?PageID=10 (Recent Whidbey Posts)
+http://www.only4gurus.com/v2/rss/cat.asp?Cat=VB.NET (VB.NET)
+http://www.amazon.com/exec/obidos/subst/xs/syndicate.html/002-8556173-1415223
+http://xml-na.amznxslt.com/onca/xml3?mode=books&bcm=Books%3A%20Nonfiction%20&t=webservices-20&dev-t=amznRss&type=lite&page=1&ct=text/xml&sort=+salesrank&f=http://xml.amazon.com/xsl/xml-rss091.xsl&BrowseNodeSearch=53
+http://rss.pcworld.com/rss/pg_feed.rss?pgid=33
+http://www.microsite.reuters.com/rss/sportsNews
+http://www.microsite.reuters.com/rss/technologyNews
+http://www.microsite.reuters.com/rss/oddlyEnoughNews
+http://www.washingtonpost.com/wp-srv/opinion/rssheadlines.xml
+http://msdn.microsoft.com/msdntv/rss.xml
+http://msdn.microsoft.com/vcsharp/rss.xml
+http://dwlt.net/tapestry/dilbert.rdf
+http://seattlepi.nwsource.com/rss/huskies.rss
+http://feeds.zdnet.co.uk/rss/0,39026141,10000003c,00.htm
+http://z.about.com/6/g/seattle/b/index.xml\
+http://xml-na.amznxslt.com/onca/xml3?mode=electronics&bcm=Electronics%3A%20Computer%20%26%20Video%20Games%3A%20Xbox&t=webservices-20&dev-t=amznRss&type=lite&page=1&ct=text/xml&sort=+salesrank&f=http://xml.amazon.com/xsl/xml-rss091.xsl&BrowseNodeSearch=537504
+http://xml-na.amznxslt.com/onca/xml3?mode=books&bcm=Books%3A%20Nonfiction%20&t=webservices-20&dev-t=amznRss&type=lite&page=1&ct=text/xml&sort=+salesrank&f=http://xml.amazon.com/xsl/xml-rss091.xsl&BrowseNodeSearch=53
+http://www.windowsforms.net/rss/rssFeed.aspx?PageID=6
+http://rss.allrecipes.com/2/7.xml
+http://www.microsite.reuters.com/rss/oddlyEnoughNews
+http://www.only4gurus.com/v2/rss/cat.asp?Cat=VB.NET
+http://seattlepi.nwsource.com/rss/local.rss
+http://feeds.zdnet.co.uk/rss/0,39026141,10000003c,00.htm
+http://z.about.com/6/g/seattle/b/index.xml
+http://seattlepi.nwsource.com/rss/huskies.rss
+http://slashdot.org/slashdot.rdf
+http://xml-na.amznxslt.com/onca/xml3?mode=books&bcm=Books%3A%20Nonfiction%20&t=webservices-20&dev-t=amznRss&type=lite&page=1&ct=text/xml&sort=+salesrank&f=http://xml.amazon.com/xsl/xml-rss091.xsl&BrowseNodeSearch=53
+http://www.windowsforms.net/rss/rssFeed.aspx?PageID=6
+http://rss.allrecipes.com/2/7.xml
+http://www.microsite.reuters.com/rss/oddlyEnoughNews
+http://www.only4gurus.com/v2/rss/cat.asp?Cat=VB.NET
+http://blogs.msdn.com/MainFeed.aspx
+http://www.simplegeek.com/blogxbrowsing.asmx/GetRss
+http://msdn.microsoft.com/smartclient/rss.xml
+http://msdn.microsoft.com/rss.xml
+
+
+http://xml-na.amznxslt.com/onca/xml3?mode=books&bcm=Books%3A%20Nonfiction%20&t=webservices-20&dev-t=amznRss&type=lite&page=1&ct=text/xml&sort=+salesrank&f=http://xml.amazon.com/xsl/xml-rss091.xsl&BrowseNodeSearch=53
+http://xml-na.amznxslt.com/onca/xml3?mode=electronics&bcm=Electronics%3A%20Computer%20%26%20Video%20Games%3A%20Xbox&t=webservices-20&dev-t=amznRss&type=lite&page=1&ct=text/xml&sort=+salesrank&f=http://xml.amazon.com/xsl/xml-rss091.xsl&BrowseNodeSearch=537504
+http://blogs.msdn.com/MainFeed.aspx
+http://www.simplegeek.com/blogxbrowsing.asmx/GetRss
+http://msdn.microsoft.com/smartclient/rss.xml
+http://msdn.microsoft.com/rss.xml
+http://z.about.com/6/g/seattle/b/index.xml
+http://seattlepi.nwsource.com/rss/local.rss
+http://www.windowsforms.net/rss/rssFeed.aspx?PageID=6
+http://www.microsite.reuters.com/rss/oddlyEnoughNews
+http://www.only4gurus.com/v2/rss/cat.asp?Cat=VB.NET
+http://rss.pcworld.com/rss/pg_feed.rss?pgid=33
+http://www.microsite.reuters.com/rss/sportsNews
+http://rss.allrecipes.com/2/7.xml
+http://www.tapestrycomics.com/dilbert.xml
+
+
+http://xml-na.amznxslt.com/onca/xml3?mode=books&bcm=Books%3A%20Nonfiction%20&t=webservices-20&dev-t=amznRss&type=lite&page=1&ct=text/xml&sort=+salesrank&f=http://xml.amazon.com/xsl/xml-rss091.xsl&BrowseNodeSearch=53
+http://www.tapestrycomics.com/dilbert.xml
+http://music.msn.com/services/rss.aspx?chartname=topsongs
+http://rss.msnbc.msn.com/id/3032112/device/rss/rss.xml
+http://blogs.msdn.com/pdc/rss.aspx
+http://syndication.soccerway.com/rss/feed.php
+http://www.wugnet.com/windowsmarketplace/rss/rssfeeds/wmswgraphicpub.xml
+http://today.reuters.com/rss/oddlyEnoughNews/
+

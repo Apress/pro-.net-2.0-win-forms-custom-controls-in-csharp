@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WizardComponent", "WizardComponent\WizardComponent.csproj", "{C96B15FA-A545-4C3B-B3FE-517C0B6E5EB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WizardComponentTest", "WizardComponentTest\WizardComponentTest.csproj", "{EC6E21C2-75FC-4267-9D9B-39118F4FDBB3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C96B15FA-A545-4C3B-B3FE-517C0B6E5EB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C96B15FA-A545-4C3B-B3FE-517C0B6E5EB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C96B15FA-A545-4C3B-B3FE-517C0B6E5EB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C96B15FA-A545-4C3B-B3FE-517C0B6E5EB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC6E21C2-75FC-4267-9D9B-39118F4FDBB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6E21C2-75FC-4267-9D9B-39118F4FDBB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6E21C2-75FC-4267-9D9B-39118F4FDBB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6E21C2-75FC-4267-9D9B-39118F4FDBB3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

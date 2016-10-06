@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControl", "CustomControl\CustomControl.csproj", "{729CF390-C328-46F8-8F76-2AE1DD52A7C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControlHost", "CustomControlHost\CustomControlHost.csproj", "{AC2978AB-2EEE-46E3-BC89-2138B2D1448F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{729CF390-C328-46F8-8F76-2AE1DD52A7C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{729CF390-C328-46F8-8F76-2AE1DD52A7C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{729CF390-C328-46F8-8F76-2AE1DD52A7C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{729CF390-C328-46F8-8F76-2AE1DD52A7C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC2978AB-2EEE-46E3-BC89-2138B2D1448F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC2978AB-2EEE-46E3-BC89-2138B2D1448F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC2978AB-2EEE-46E3-BC89-2138B2D1448F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC2978AB-2EEE-46E3-BC89-2138B2D1448F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

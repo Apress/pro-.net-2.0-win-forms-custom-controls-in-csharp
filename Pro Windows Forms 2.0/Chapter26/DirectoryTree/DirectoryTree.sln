@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryTreeControl", "DirectoryTreeControl\DirectoryTreeControl.csproj", "{3BAAC556-742E-413E-B3EC-12E23DB99DB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryTreeHost", "DirectoryTreeHost\DirectoryTreeHost.csproj", "{822BA761-DEC0-48C6-BA50-290B02E1BF77}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3BAAC556-742E-413E-B3EC-12E23DB99DB8} = {3BAAC556-742E-413E-B3EC-12E23DB99DB8}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BAAC556-742E-413E-B3EC-12E23DB99DB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BAAC556-742E-413E-B3EC-12E23DB99DB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BAAC556-742E-413E-B3EC-12E23DB99DB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BAAC556-742E-413E-B3EC-12E23DB99DB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{822BA761-DEC0-48C6-BA50-290B02E1BF77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{822BA761-DEC0-48C6-BA50-290B02E1BF77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{822BA761-DEC0-48C6-BA50-290B02E1BF77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{822BA761-DEC0-48C6-BA50-290B02E1BF77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

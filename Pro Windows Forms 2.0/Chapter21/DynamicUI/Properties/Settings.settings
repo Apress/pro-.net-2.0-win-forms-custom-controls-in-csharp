@@ -1,0 +1,10 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DynamicUI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DBConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=localhost\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=DynamicMenu;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=DynamicMenu;"
+</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

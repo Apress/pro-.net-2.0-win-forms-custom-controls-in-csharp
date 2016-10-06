@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomizeToolStrip", "CustomizeToolStrip\CustomizeToolStrip.csproj", "{F56F929A-7F84-46E8-8E09-63213497205C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomizeToolStripTest", "CustomizeToolStripTest\CustomizeToolStripTest.csproj", "{9CCC3E0E-464C-49F7-B038-FC795ED4A2C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F56F929A-7F84-46E8-8E09-63213497205C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F56F929A-7F84-46E8-8E09-63213497205C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F56F929A-7F84-46E8-8E09-63213497205C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F56F929A-7F84-46E8-8E09-63213497205C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CCC3E0E-464C-49F7-B038-FC795ED4A2C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CCC3E0E-464C-49F7-B038-FC795ED4A2C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CCC3E0E-464C-49F7-B038-FC795ED4A2C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CCC3E0E-464C-49F7-B038-FC795ED4A2C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

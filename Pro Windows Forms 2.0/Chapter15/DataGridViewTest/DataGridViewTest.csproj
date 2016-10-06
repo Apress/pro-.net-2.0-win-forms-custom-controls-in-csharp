@@ -1,0 +1,199 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50215</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{12349226-A8CC-4783-800D-91091304021C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataGridViewTest</RootNamespace>
+    <AssemblyName>DataGridViewTest</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoResize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoResize.Designer.cs">
+      <DependentUpon>AutoResize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Barebones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Barebones.Designer.cs">
+      <DependentUpon>Barebones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BoundImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoundImage.Designer.cs">
+      <DependentUpon>BoundImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ButtonColumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ButtonColumn.Designer.cs">
+      <DependentUpon>ButtonColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm.Designer.cs">
+      <DependentUpon>ChildForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomSorting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomSorting.Designer.cs">
+      <DependentUpon>CustomSorting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formatting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formatting.Designer.cs">
+      <DependentUpon>Formatting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListColumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListColumn.Designer.cs">
+      <DependentUpon>ListColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AutoResize.resx">
+      <DependentUpon>AutoResize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Barebones.resx">
+      <DependentUpon>Barebones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BoundImage.resx">
+      <DependentUpon>BoundImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ButtonColumn.resx">
+      <DependentUpon>ButtonColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm.resx">
+      <DependentUpon>ChildForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomSorting.resx">
+      <DependentUpon>CustomSorting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formatting.resx">
+      <DependentUpon>Formatting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListColumn.resx">
+      <DependentUpon>ListColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProportionateFill.resx">
+      <DependentUpon>ProportionateFill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Selection.resx">
+      <DependentUpon>Selection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unbound.resx">
+      <DependentUpon>Unbound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnboundImage.resx">
+      <DependentUpon>UnboundImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValidateErrors.resx">
+      <DependentUpon>ValidateErrors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wrapping.resx">
+      <DependentUpon>Wrapping.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ProportionateFill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProportionateFill.Designer.cs">
+      <DependentUpon>ProportionateFill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Selection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Selection.Designer.cs">
+      <DependentUpon>Selection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoreDB.cs" />
+    <Compile Include="Unbound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unbound.Designer.cs">
+      <DependentUpon>Unbound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnboundImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnboundImage.Designer.cs">
+      <DependentUpon>UnboundImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility.cs" />
+    <Compile Include="ValidateErrors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValidateErrors.Designer.cs">
+      <DependentUpon>ValidateErrors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wrapping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wrapping.Designer.cs">
+      <DependentUpon>Wrapping.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

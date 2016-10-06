@@ -1,0 +1,143 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7AD197C7-3B03-4424-AA4F-4BB75CF012C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MultithreadingClient</RootNamespace>
+    <AssemblyName>MultithreadingClient</AssemblyName>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AsyncTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsyncTest.Designer.cs">
+      <DependentUpon>AsyncTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsyncTestLocking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsyncTestLocking.Designer.cs">
+      <DependentUpon>AsyncTestLocking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsyncTestBackgroundWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsyncTestBackgroundWorker.Designer.cs">
+      <DependentUpon>AsyncTestBackgroundWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsyncTestMultiple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsyncTestMultiple.Designer.cs">
+      <DependentUpon>AsyncTestMultiple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsyncTestQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsyncTestQuery.Designer.cs">
+      <DependentUpon>AsyncTestQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsyncTestResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsyncTestResult.Designer.cs">
+      <DependentUpon>AsyncTestResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SyncTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SyncTest.Designer.cs">
+      <DependentUpon>SyncTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AsyncTest.resx">
+      <DependentUpon>AsyncTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsyncTestLocking.resx">
+      <DependentUpon>AsyncTestLocking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsyncTestBackgroundWorker.resx">
+      <DependentUpon>AsyncTestBackgroundWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsyncTestQuery.resx">
+      <DependentUpon>AsyncTestQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsyncTestResult.resx">
+      <DependentUpon>AsyncTestResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SyncTest.resx">
+      <DependentUpon>SyncTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskManagerClient.resx">
+      <DependentUpon>TaskManagerClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="TaskManagerClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskManagerClient.Designer.cs">
+      <DependentUpon>TaskManagerClient.cs</DependentUpon>
+    </Compile>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MultithreadingWorker\MultithreadingWorker.csproj">
+      <Project>{C3697F48-4842-4712-BF8D-5EDC993EBB4F}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+      <Name>MultithreadingWorker</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+</Project>

@@ -1,0 +1,145 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D5433A0E-B523-44DB-A139-9B9B38F71D8E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Windows.Forms.Samples</RootNamespace>
+    <AssemblyName>RSS Reader</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Browser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browser.Designer.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CustomMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\CustomToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\GradientHeaderStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\RSSView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\RSSView.Designer.cs">
+      <DependentUpon>RSSView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ToolStripHoverItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LinksEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinksEditor.Designer.cs">
+      <DependentUpon>LinksEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Browser.resx">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\RSSView.resx">
+      <DependentUpon>RSSView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinksEditor.resx">
+      <DependentUpon>LinksEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RSSUtilities\RssFeed.cs" />
+    <Compile Include="RSSUtilities\RssItem.cs" />
+    <Compile Include="RSSUtilities\RssLink.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\back.png" />
+    <Content Include="Images\bluefooter.bmp" />
+    <Content Include="Images\blueheader.bmp" />
+    <Content Include="Images\browse.png" />
+    <None Include="Images\close2.PNG" />
+    <None Include="Images\close.PNG" />
+    <None Include="Images\compress2.PNG" />
+    <None Include="Images\compress.PNG" />
+    <Content Include="Images\email.png" />
+    <None Include="Images\expand.PNG" />
+    <None Include="Images\expand2.PNG" />
+    <Content Include="Images\forward.png" />
+    <Content Include="Images\graphs.png" />
+    <Content Include="Images\help.png" />
+    <Content Include="Images\home.png" />
+    <Content Include="Images\more.png" />
+    <Content Include="Images\online.png" />
+    <Content Include="Images\orders.png" />
+    <Content Include="Images\reports.png" />
+    <Content Include="Images\sound.png" />
+    <Content Include="Images\trends.png" />
+    <Content Include="Images\update.PNG" />
+    <Content Include="Images\updates.png" />
+    <Content Include="Feeds.txt" />
+    <None Include="Properties\DataSources\System.Windows.Forms.Samples.RSS.RssItem.datasource" />
+    <None Include="Properties\DataSources\System.Windows.Forms.Samples.RSS.RssLink.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

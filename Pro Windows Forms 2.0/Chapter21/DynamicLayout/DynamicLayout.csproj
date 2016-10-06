@@ -1,0 +1,187 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3DD93D9C-4F25-49F1-9B6E-401CD5E093A5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DynamicLayout</RootNamespace>
+    <AssemblyName>DynamicLayout</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ModularPortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModularPortal.Designer.cs">
+      <DependentUpon>ModularPortal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProportionalResizing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProportionalResizing.designer.cs">
+      <DependentUpon>ProportionalResizing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CellSpanning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CellSpanning.Designer.cs">
+      <DependentUpon>CellSpanning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomLayoutEngine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomLayoutEngine.Designer.cs">
+      <DependentUpon>CustomLayoutEngine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlowLayoutTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlowLayoutTest.Designer.cs">
+      <DependentUpon>FlowLayoutTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsFromFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsFromFile.Designer.cs">
+      <DependentUpon>FormsFromFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HandMadeLayoutManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HandMadeLayoutManager.Designer.cs">
+      <DependentUpon>HandMadeLayoutManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocalizableDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocalizableDialog.Designer.cs">
+      <DependentUpon>LocalizableDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ModularPortal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModularPortal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProportionalResizing.resx">
+      <DependentUpon>ProportionalResizing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CellSpanning.resx">
+      <DependentUpon>CellSpanning.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomLayoutEngine.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomLayoutEngine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlowLayoutTest.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FlowLayoutTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsFromFile.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormsFromFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HandMadeLayoutManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HandMadeLayoutManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalizableDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LocalizableDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TableLayoutTest.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TableLayoutTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextBoxColumn.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TextBoxColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SingleLineFlowLayoutManager.cs" />
+    <Compile Include="SingleLineFlowLayoutEngine.cs" />
+    <Compile Include="SurveyDeserializer.cs" />
+    <Compile Include="TableLayoutTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableLayoutTest.Designer.cs">
+      <DependentUpon>TableLayoutTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextBoxColumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextBoxColumn.Designer.cs">
+      <DependentUpon>TextBoxColumn.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CollapsiblePanelControl\CollapsiblePanelControl.csproj">
+      <Project>{A442592C-F336-4824-B4C7-11B34B724693}</Project>
+      <Name>CollapsiblePanelControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
